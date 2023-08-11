@@ -1,11 +1,11 @@
 import Header from "./components/header";
-import Main from "./components/main";
+import Content from "./components/content";
 
 function App() {
   return (
     <div className="App w-full h-full bg-grayDark">
       <Header />
-      <Main />
+      <Content />
     </div>
   );
 }
