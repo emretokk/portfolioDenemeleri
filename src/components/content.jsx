@@ -1,18 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Main() {
+  const [typeCount, setTypeCount] = useState(0);
   let text = "Merhaba, ben Emre Tok.";
   let index = 0;
   useEffect(() => {
     const interval = setInterval(() => {
-      document.getElementById("typer").innerHTML += text.charAt(index);
+      document.getElementById("typer").innerHTML = text.substring(0, index);
       index++;
-      console.log("i runned");
-      if (index == 22) {
+      if (index == 23) {
+        index = 0;
+        setTimeout(() => {
+          setTypeCount(typeCount + 1);
+        }, 5000);
         clearInterval(interval);
       }
-    }, 200);
-  }, []);
+    }, 150);
+  }, [typeCount]);
 
   return (
     <main className="border-t border-black h-screen relative">
