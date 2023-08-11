@@ -5,11 +5,14 @@ import myPdf from "../assets/test.pdf";
 
 function Header() {
   return (
-    <header className="w-full h-20 flex bg-grayDark">
-      <div id="leftHeader" className="w-1/2 h-full flex items-center space-x-8">
+    <header className="w-full h-20 flex">
+      <div
+        id="leftHeader"
+        className="md:w-1/2 h-full flex items-center space-x-8"
+      >
         <div className="icon ml-8">
           <Link to={"/"}>
-            <FaCodePullRequest className="w-8 h-8 text-secondary" />
+            <FaCodePullRequest className="w-8 h-8 text-primary" />
           </Link>
         </div>
       </div>
@@ -24,7 +27,7 @@ function Header() {
           <Link to={"/contact"}>{"<İletişim />"}</Link>
         </div>
         <a href={myPdf} download="emretokCV">
-          <button className=" border-2 border-grayLight p-2 rounded-2xl bg-grayDark hover:bg-grayLight hover:border-grayDark shadow shadow-black">
+          <button className=" border-2 border-grayLight p-2 rounded-2xl bg-grayDark hover:bg-grayLight hover:border-grayDark shadow shadow-primary">
             CV İndir
           </button>
         </a>
