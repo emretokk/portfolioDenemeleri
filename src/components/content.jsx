@@ -24,7 +24,7 @@ function Main() {
         id="typingArea"
         className="absolute top-20 left-1/2 -translate-x-1/2 w-[1200px] h-96"
       >
-        <span id="typer"></span>
+        <span id="typer" className="text-2xl"></span>
       </div>
     </main>
   );
