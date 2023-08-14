@@ -8,7 +8,7 @@ function Header() {
     <header className="w-full h-20 flex">
       <div
         id="leftHeader"
-        className="md:w-1/2 h-full flex items-center space-x-8"
+        className="sm:w-1/2 h-full flex items-center space-x-8"
       >
         <div className="icon ml-8">
           <Link to={"/"}>
@@ -18,7 +18,7 @@ function Header() {
       </div>
       <div
         id="rightHeader"
-        className="w-1/2 pr-8 h-full flex items-center justify-end space-x-8"
+        className="w-1/2 pr-8 h-full flex items-center justify-end space-x-8 whitespace-nowrap"
       >
         <div className="hover:text-lime">
           <Link to={"/projects"}>{"<Projeler />"}</Link>

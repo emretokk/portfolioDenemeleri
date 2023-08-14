@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import construction from "../assets/construction.png";
+import crane from "../assets/crane.png";
 
-function Main() {
+function Content() {
   const [typeCount, setTypeCount] = useState(0);
   let text = "Merhaba, ben Emre Tok.";
   let index = 0;
@@ -19,15 +21,27 @@ function Main() {
   }, [typeCount]);
 
   return (
-    <main className="border-t border-black h-screen relative">
-      <div
-        id="typingArea"
-        className="absolute top-20 left-1/2 -translate-x-1/2 w-[1200px] h-96"
-      >
-        <span id="typer" className="text-2xl"></span>
+    <main className="flex border-t border-black h-full relative">
+      <div className="w-1/3 h-full">
+        <div id="typingArea" className="mt-20 ml-20 w-fit h-fit">
+          <span id="typer" className="text-2xl whitespace-nowrap"></span>
+        </div>
+      </div>
+      <div className="w-2/3 h-full flex flex-col justify-end">
+        <h2 className="text-xl mx-auto">Burası Hala Yapım Aşamasında!!</h2>
+        <div className="flex mx-auto">
+          <img
+            src={construction}
+            alt="construction"
+            className="sm:w-[250px] sm:h-[200px] lg:w-[500px] lg:h-[350px]"
+          />
+          <div className="flex items-center">
+            <img src={crane} alt="crane" className="w-28 h-28" />
+          </div>
+        </div>
       </div>
     </main>
   );
 }
 
-export default Main;
+export default Content;

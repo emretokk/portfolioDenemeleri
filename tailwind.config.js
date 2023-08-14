@@ -12,6 +12,9 @@ export default {
         white: "#F5F9FF",
         lime: "#E6F4F1",
       },
+      animation: {
+        bounceSlow: "bounce linear 10s infinite",
+      },
     },
   },
   plugins: [],
