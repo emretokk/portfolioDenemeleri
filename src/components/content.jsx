@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaGithub, FaTwitter, FaInstagram } from "react-icons/fa6";
 import construction from "../assets/construction.png";
 import crane from "../assets/crane.png";
 
@@ -28,6 +29,26 @@ function Content() {
         </div>
       </div>
       <div className="w-2/3 h-full flex flex-col justify-end">
+        <div className="w-full h-fit flex flex-grow items-center justify-center gap-4 text-primary">
+          <a
+            href="https://github.com/emretokk"
+            className="hover:text-grayLight transition-colors"
+          >
+            <FaGithub size={40} />
+          </a>
+          <a
+            href="https://twitter.com/emre_t0k"
+            className="hover:text-grayLight transition-colors"
+          >
+            <FaTwitter size={40} />
+          </a>
+          <a
+            href="https://www.instagram.com/emre.t0k/"
+            className="hover:text-grayLight transition-colors"
+          >
+            <FaInstagram size={40} />
+          </a>
+        </div>
         <h2 className="text-xl mx-auto">Burası Hala Yapım Aşamasında!!</h2>
         <div className="flex mx-auto">
           <img

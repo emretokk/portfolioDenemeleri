@@ -12,7 +12,7 @@ function Header() {
       >
         <div className="icon ml-8">
           <Link to={"/"}>
-            <FaCodePullRequest className="w-8 h-8 text-primary" />
+            <FaCodePullRequest className="w-8 h-8 text-black" />
           </Link>
         </div>
       </div>
