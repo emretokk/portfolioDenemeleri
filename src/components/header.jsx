@@ -5,7 +5,7 @@ import myPdf from "../assets/test.pdf";
 
 function Header() {
   return (
-    <header className="w-full h-20 flex">
+    <header className="w-full h-20 flex shrink-0">
       <div
         id="leftHeader"
         className="sm:w-1/2 h-full flex items-center space-x-8"
