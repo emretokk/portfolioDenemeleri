@@ -90,8 +90,7 @@ function Projects() {
           <div className="flex flex-col gap-4 grow pl-8">
             <h2 className="text-2xl md:text-3xl">Trendyol Karanlık Mod</h2>
             <p className="text-sm md:text-base">
-              Bu projede Trendyol'a olmayan karanlık modunu eklemeye
-              çalışmıştım.
+              Bu projede Trendyol'a karanlık mod eklemeye çalışmıştım.
             </p>
             <span className=" my-auto whitespace-nowrap text-sm md:text-base1">
               Açık kaynak kodlarına

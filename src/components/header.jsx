@@ -6,10 +6,7 @@ import myPdf from "../assets/test.pdf";
 function Header() {
   return (
     <header className="w-full h-20 flex shrink-0">
-      <div
-        id="leftHeader"
-        className="sm:w-1/2 h-full flex items-center space-x-8"
-      >
+      <div id="leftHeader" className="w-1/2 h-full flex items-center space-x-8">
         <div className="icon ml-8">
           <Link to={"/"}>
             <FaCodePullRequest className="w-8 h-8 text-black" />
@@ -18,7 +15,7 @@ function Header() {
       </div>
       <div
         id="rightHeader"
-        className="w-1/2 pr-8 h-full flex items-center justify-end space-x-8 whitespace-nowrap"
+        className="w-1/2 pr-8 h-full flex items-center justify-end space-x-2 sm:space-x-8 text-xs sm:text-xl whitespace-nowrap"
       >
         <div className="hover:text-lime">
           <Link to={"/projects"}>{"<Projeler />"}</Link>
